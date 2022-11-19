@@ -6,6 +6,6 @@ urlpatterns = [
     path("voletos_avion/", voletos_avion),
     path("viajes_disponibles/", viajes_disponibles),
 
-    path("entregable/", include("EntregaA.urls"))
+    path("EntregaA/", include("EntregaA.urls"))
 
 ]

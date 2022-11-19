@@ -10,7 +10,7 @@ from EntregaA.models import Usuario
 def inicio(request):
     return HttpResponse("Estas en el inicio")
 
-def usuarios(request):
+def usuario(request):
     return HttpResponse("Crear usuario")
 
 def voletos_avion(request):

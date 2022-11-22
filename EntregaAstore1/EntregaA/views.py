@@ -6,19 +6,17 @@ from EntregaA.models import *
 # Create your views here.
 
 
-
 def inicio(request):
-    return HttpResponse("Estas en el inicio")
+    return render(request, "EntregaA/inicio.html")
 
-def usuario(request):
-    return HttpResponse("Crear usuario")
+def ingresar_usuario(request):
+    return render(request, "EntregaA/usuario.html")
 
-def voletos_avion(request):
-    return HttpResponse("Estas en voletos de avion")
+def vista_comprar_voletos(request):
+    return render(request, "EntregaA/comprarVoletos.html")
 
-def viajes_disponibles(request):
-    return HttpResponse("Estas en viajes disponibles")
-
+def vista_sobre_nosotros(request):
+    return render(request, "EntregaA/sobreNosotros.html")
 
 #def Vista_plantilla(request):
    # listado = Usuario.objects.all()

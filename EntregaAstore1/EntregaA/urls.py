@@ -5,6 +5,7 @@ from EntregaA.views import *
 urlpatterns = [
     path("", inicio, name="Inicio"),
     path("usuario/", ingresar_usuario, name="Usuario"),
-    path("voletosavion/", vista_comprar_voletos, name="Voletos"),
-    path("sobrenosotros/", vista_sobre_nosotros, name="Sobre-Nosotros"),
+    path("boletosavion/", vista_comprar_boletos, name="Boletos"),
+    path("sobrenosotros/", vista_sobre_nosotros, name="SobreNosotros"),
+    path("registro/", vista_registro, name= "Registro"),
 ]

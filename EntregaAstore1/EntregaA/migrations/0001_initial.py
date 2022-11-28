@@ -15,22 +15,12 @@ class Migration(migrations.Migration):
             name='Usuario',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('nombre', models.CharField(max_length=50)),
-                ('apellido', models.CharField(max_length=50)),
-                ('edad', models.IntegerField()),
-                ('email', models.EmailField(max_length=254)),
+                ('contraseña', models.IntegerField()),
+                ('email', models.EmailField()),
             ],
         ),
         migrations.CreateModel(
-            name='Viajes_disponibles',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('nombre', models.CharField(max_length=50)),
-                ('horario', models.IntegerField()),
-            ],
-        ),
-        migrations.CreateModel(
-            name='Voletos_avion',
+            name='comprar_voletos',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('nombre', models.CharField(max_length=50)),

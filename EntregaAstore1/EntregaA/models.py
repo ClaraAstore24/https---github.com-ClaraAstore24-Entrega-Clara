@@ -2,16 +2,21 @@ from django.db import models
 
 # Create your models here.
 
-class ingresar(models.Model):
-    nombre = models.CharField(max_length=50)
-    apellido = models.CharField(max_length=50)
-    edad = models.IntegerField()
+class Usuario(models.Model):
+    nombre = models.IntegerField()
     email = models.EmailField()
 
-class comprar_voletos(models.Model):
+class Registrar(models.Model):
+    nombre = models.CharField(max_length=50)
+    contraseña = models.IntegerField()
+    email = models.EmailField()
+
+class Comprar_boletos(models.Model):
     nombre = models.CharField(max_length=50)
     precio = models.IntegerField()
     
-class sobre_nosotros(models.Model):
-    destino = models.CharField(max_length = 50)
-    horario= models.IntegerField()
+class Nosotros(models.Model):
+    informacion = models.CharField(max_length=100)
+    fecha = models.IntegerField()
+
+
